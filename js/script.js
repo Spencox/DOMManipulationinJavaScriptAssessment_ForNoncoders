@@ -2,9 +2,10 @@
 // It should then traverse over the array to create individual cards displaying each project details.
 
 function loadProjects() {
-  //clear existing
-
+  // DOM selector for projects container
   const projectContainer = document.getElementById('projects');   
+  //clear existing
+  projectContainer.innerHTML = "";
   if(projects){
     // loop through projects
     projects.forEach((project, index) =>{
@@ -36,7 +37,6 @@ function loadProjects() {
   }
 }
 
-
 // This function should create a new project by retrieving details from the form.
 // The project is then added to the projects array and displayed.
 
@@ -59,9 +59,8 @@ function saveNewProject() {
   // Add the new project object to the projects array 
   projects.push(newProject);
 
-  console.log(projects);
   // Load the projects after adding the new project
-  //loadProjects();
+  loadProjects();
 
   // Clear the values of the New Project Details Form after adding the new project
   document.getElementById("title").value = "";
