@@ -24,7 +24,12 @@ h1, h2{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+}
 
+/****************** CSS for new project cards********************/
+#div1, #div2 {
+    max-width: 15rem;
+    margin: 3px;
 }
 
 .card{
