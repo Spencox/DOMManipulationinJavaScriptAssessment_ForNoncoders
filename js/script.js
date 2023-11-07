@@ -55,7 +55,6 @@ function saveNewProject() {
     "image": projectImg
   }
 
-  console.log(newProject);
   // Add the new project object to the projects array 
   projects.push(newProject);
 
